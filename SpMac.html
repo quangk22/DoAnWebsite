@@ -41,7 +41,7 @@
                 </li>
                 <li><a href="GioiThieu.html">Giới thiệu</a> </li>
                 <li><a href="LienHe.html">Liên hệ</a> </li>
-                <li><a href=""><i class="fa-sharp fa-solid fa-cart-shopping"></i></a></li>
+                <li><a href="GioHang.htm"><i class="fa-sharp fa-solid fa-cart-shopping"></i></a></li>
             </ul>
         </nav>
 
@@ -89,29 +89,32 @@
                 </div>
                 <div class="filter-box">
                     <h3>Giá</h3>
-
-                    <ul>
-                        <li style="display: flex; align-items: center;">
-                            <input type="radio" id="fname" name="fname">
-                            <label for="fname" style="margin-left: 5px;">Nhỏ hơn 50,000đ</label>
-                        </li>
-                        <li style="display: flex; align-items: center;">
-                            <input type="radio" id="fname" name="fname">
-                            <label for="fname" style="margin-left: 5px;">Từ 50,000đ đến 200,000đ</label>
-                        </li>
-                        <li style="display: flex; align-items: center;">
-                            <input type="radio" id="fname" name="fname">
-                            <label for="fname" style="margin-left: 5px;">Từ 200,000đ đến 500,000đ</label>
-                        </li>
-                        <li style="display: flex; align-items: center;">
-                            <input type="radio" id="fname" name="fname">
-                            <label for="fname" style="margin-left: 5px;">Từ 500,000đ đến 1,000,000đ</label>
-                        </li>
-                        <li style="display: flex; align-items: center;">
-                            <input type="radio" id="fname" name="fname">
-                            <label for="fname" style="margin-left: 5px;">Trên 1,000,000đ</label>
-                        </li>
-                    </ul>
+  <ul>
+    <li style="display: flex; align-items: center;">
+      <input type="radio" id="price_all" name="price" value="all" checked>
+      <label for="price_all" style="margin-left: 5px;">Tất cả</label>
+    </li>
+    <li style="display: flex; align-items: center;">
+      <input type="radio" id="price_lt50k" name="price" value="lt50k">
+      <label for="price_lt50k" style="margin-left: 5px;">Nhỏ hơn 50,000đ</label>
+    </li>
+    <li style="display: flex; align-items: center;">
+      <input type="radio" id="price_50kTo200k" name="price" value="50kTo200k">
+      <label for="price_50kTo200k" style="margin-left: 5px;">Từ 50,000đ đến 200,000đ</label>
+    </li>
+    <li style="display: flex; align-items: center;">
+      <input type="radio" id="price_200kTo500k" name="price" value="200kTo500k">
+      <label for="price_200kTo500k" style="margin-left: 5px;">Từ 200,000đ đến 500,000đ</label>
+    </li>
+    <li style="display: flex; align-items: center;">
+      <input type="radio" id="price_500kTo1m" name="price" value="500kTo1m">
+      <label for="price_500kTo1m" style="margin-left: 5px;">Từ 500,000đ đến 1,000,000đ</label>
+    </li>
+    <li style="display: flex; align-items: center;">
+      <input type="radio" id="price_gt1m" name="price" value="gt1m">
+      <label for="price_gt1m" style="margin-left: 5px;">Trên 1,000,000đ</label>
+    </li>
+  </ul>
                 </div>
                 <div class="filter-box">
                     <h3>Nguồn gốc</h3>
@@ -134,23 +137,24 @@
             <div class="item">
                 <div class="card-list">
                     <div class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="Media/Photo/exclusive.jpg" alt="Card image cap">
+                        <img class="card-img-top" src="Media/Photo/PhinGiay.jpg" alt="Card image cap">
                         <div class="card-body">
-                            <h5 class="card-title">Cà phê sữa đá Highlands Coffee lon 235ml</h5>
-                            <p class="card-text">10.000đ</p>
+                            <h5 class="card-title">Cà phê đen rang xáy Phin Giấy</h5>
+                            <p class="card-text">110.000đ</p>
                             <a href="#" class="btn btn-primary">Thêm vào giỏ hàng</a>
                         </div>
                     </div>
                     <!-- end -->
                     <div class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="Media/Photo/davidoff.jpg" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">
-                        Cà phê hòa tan Davidoff lọ 100g
-                    </h5>
-                    <p class="card-text">135.000đ</p>
-                    <a href="#" class="btn btn-primary">Mua ngay</a>
-                </div>
+                        <img class="card-img-top" src="Media/Photo/ROBUSTA.jpg" alt="Card image cap"
+                            style="height: 62%;">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Cà phê hòa tan ROBUSTA gói 100g
+                            </h5>
+                            <p class="card-text">135.000đ</p>
+                            <a href="#" class="btn btn-primary">Mua ngay</a>
+                        </div>
                     </div>
                     <!-- end -->
                     <div class="card" style="width: 18rem;">
@@ -174,7 +178,7 @@
                     </div>
                     <!-- end -->
                     <div class="card" style="width: 18rem;">
-                    
+
                         <img class="card-img-top" src="Media/Photo/redcup.jpg" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">
@@ -242,7 +246,7 @@
                 <div class="view-more">
                     <button class="btn-load-more"> Xem thêm 3 sản phẩm</button>
                 </div>
-               
+
             </div>
         </div>
     </div>
@@ -280,44 +284,46 @@
             </div>
         </div>
     </footer>
+    <script src="Main.js"></script>
+    <script >
+        document.addEventListener("DOMContentLoaded", function () {
+            var productItems = document.querySelectorAll(".card");
+            var btnLoadMore = document.querySelector(".btn-load-more");
 
-    <script>
-       document.addEventListener("DOMContentLoaded", function () {
-        var productItems = document.querySelectorAll(".card");
-        var btnLoadMore = document.querySelector(".btn-load-more");
+            var itemsToShow = 6; // Số lượng sản phẩm muốn hiển thị mỗi lần nhấp vào nút "Xem thêm sản phẩm"
+            var visibleItems = 0; // Số lượng sản phẩm đã hiển thị
 
-        var itemsToShow = 6; // Số lượng sản phẩm muốn hiển thị mỗi lần nhấp vào nút "Xem thêm sản phẩm"
-        var visibleItems = 0; // Số lượng sản phẩm đã hiển thị
-
-        // Ẩn tất cả sản phẩm
-        for (var i = 0; i < productItems.length; i++) {
-            productItems[i].style.display = "none";
-        }
-
-        // Hiển thị số lượng sản phẩm ban đầu
-        for (var i = 0; i < itemsToShow; i++) {
-            if (productItems[i]) {
-                productItems[i].style.display = "block";
-                visibleItems++;
-            }
-        }
-
-        // Xử lý sự kiện nhấp vào nút "Xem thêm sản phẩm"
-        btnLoadMore.addEventListener("click", function () {
-            var hiddenItems = document.querySelectorAll(".card:not([style*='display: block'])");
-            var itemsToDisplay = Math.min(hiddenItems.length, itemsToShow);
-
-            for (var i = 0; i < itemsToDisplay; i++) {
-                hiddenItems[i].style.display = "block";
-                visibleItems++;
+            // Ẩn tất cả sản phẩm
+            for (var i = 0; i < productItems.length; i++) {
+                productItems[i].style.display = "none";
             }
 
-            if (visibleItems >= hiddenItems.length) {
-                btnLoadMore.style.display = "none";
+            // Hiển thị số lượng sản phẩm ban đầu
+            for (var i = 0; i < itemsToShow; i++) {
+                if (productItems[i]) {
+                    productItems[i].style.display = "block";
+                    visibleItems++;
+                }
             }
+
+            // Xử lý sự kiện nhấp vào nút "Xem thêm sản phẩm"
+            btnLoadMore.addEventListener("click", function () {
+                var hiddenItems = document.querySelectorAll(".card:not([style*='display: block'])");
+                var itemsToDisplay = Math.min(hiddenItems.length, itemsToShow);
+
+                for (var i = 0; i < itemsToDisplay; i++) {
+                    hiddenItems[i].style.display = "block";
+                    visibleItems++;
+                }
+
+                if (visibleItems >= hiddenItems.length) {
+                    btnLoadMore.style.display = "none";
+                }
+            });
         });
-    });
+   
     </script>
+     <script src="Main.js"></script>
 </body>
 
 </html>

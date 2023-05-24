@@ -6,9 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>COFFEE SHOP</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,16 +22,65 @@
 
     <link rel="shortcut icon" type="image/png" href="Media/Photo/logoTab.png" class="tab-icon">
 </head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: 0;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .gio-hang {
+        border: 1px solid #ddd;
+        box-shadow: 2px 2px 4px #ddd;
+        padding: 20px;
+        margin: auto;
+        max-width: 1180px;
+    }
+
+    .item-gio-hang {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .hinh-anh img {
+        width: 60px;
+        height: 60px;
+
+    }
+
+    .item-gio-hang .hinh-anh, 
+    .so-luong,
+    .hanh-dong {
+        flex: 1;
+        margin-left: 30px;
+    }
+
+    .item-gio-hang .gia {
+        flex: 2;
+    }
+
+    .item-gio-hang .ten {
+        flex: 3;
+    }
+    .so-luong{
+       max-width: 50px;
+    }
+</style>
 
 <body>
     <div class="header">
         <nav class="container">
-            <a href="Home.html" class="logo">
+            <a href="" class="logo">
                 <img src="Media/Photo/logo.jpg" alt="">
             </a>
             <ul class="main-menu">
                 <li> <a href="Home.html">Trang chủ</a> </li>
-                <li><a href="">Sản phẩm</a>
+                <li><a href="SPTrungNguyen.html">Sản phẩm</a>
                     <ul class="sub-menu">
                         <li><a href="SPTrungNguyen.html">Coffee trung nguyên</a></li>
                         <li><a href="SpDaLat.html">Đà lạt coffee</a></li>
@@ -39,67 +90,38 @@
                 </li>
                 <li><a href="GioiThieu.html">Giới thiệu</a> </li>
                 <li><a href="LienHe.html">Liên hệ</a> </li>
-                <li><a href="GioHang.htm"><i class="fa-sharp fa-solid fa-cart-shopping"></i></a></li>
+                <li><a href=""><i class="fa-sharp fa-solid fa-cart-shopping"></i></a></li>
             </ul>
         </nav>
 
     </div>
-    <div class="body-container">
-        <div class="body-body">
-            <div class="link">
-                <a href="">Trang chủ</a> >
-                <a href="">Liên hệ</a>
-            </div>
-            <h1>Liên hệ</h1>
-            <div class="map">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3826.353786404968!2d107.58544287480765!3d16.457614084279598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3141a14771646be3%3A0x2fd0ad0d9227d5b0!2zNzAgTmd1eeG7hW4gSHXhu4csIFbEqW5oIE5pbmgsIFRow6BuaCBwaOG7kSBIdeG6vywgVGjhu6thIFRoacOqbiBIdeG6vywgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1684416024492!5m2!1svi!2s"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-            <div class="form">
-                <div class="clearfix">
-                    <div class="page-left-title">
-                        <i class="fa fa-envelope"></i><span>Để lại lời nhắn cho chúng tôi</span>
-                    </div>
-                    <div class="input-group">
-                        <div class="group">
-                            <input type="text" name="contact[name]" class="form-control" placeholder="Họ và tên"
-                                aria-describedby="basic-addon1" style="width: 300px;">
-                            <input type="text" name="contact[email]" class="form-control" placeholder="Email đầy đủ"
-                                aria-describedby="basic-addon1" style="width: 300px;">
-                            <input type="text" name="contact[phone]" class="form-control" placeholder="Số điện thoại"
-                                aria-describedby="basic-addon1" style="width: 300px;">
-                        </div>
-                        <textarea name="contact[body]" placeholder="Viết lời nhắn"
-                            style="margin-left: 20px; width: 180px; height: 155px;"></textarea>
-                    </div>
-                    <button>
-                        Gửi lời nhắn
-                    </button>
-
-                </div>
-                <div class="clearfix-tile">
-                    <div class="right-title">
-                        <i class="fa fa-university"></i><span>Thông tin liên hệ shop</span>
-                    </div>
-                    <div class="phone">
-                        <i class="fa fa-phone"></i><b>Điện thoại: </b>
-                    </div>
-                    <div class="text-indent-page">
-                        <span>0787999999</span>
-                    </div>
-                    <div class="address">
-                        <i class="fa-sharp fa-solid fa-location-dot"></i><b>Địa chỉ :</b>
-                    </div>
-                    <div class="text-indent-page">
-                        <span>70 Nguyễn Huệ, Vĩnh Ninh, Thành phố Huế, Thừa Thiên Huế</span>
-                    </div>
-                </div>
-            </div>
+    <div class="banner">
+        <div class="banner-slider">
+            <img src="Media/Photo/slide_banner.jpg" class="slider-image active">
+            <img src="Media/Photo/slide_banner2.jpg" class="slider-image">
+            <img src="Media/Photo/slide_banner3.jpg" class="slider-image">
         </div>
-
     </div>
+
+
+    <div class="gio-hang">
+        <div class="item-gio-hang">
+            <div class="hinh-anh">
+                <img src="Media/Photo/nescafe.jpg" alt="">
+            </div>
+            <p class="ten">
+                Cà phê hòa tan nguyên chất Nescafé
+            </p>
+            <p class="gia">
+
+                <samp class="gia-ban"> 200.000đ</samp>
+            </p>
+            <input type="number" class="so-luong">
+            
+            <div class="hanh-dong">Xóa</div>
+        </div>
+    </div>
+
     <footer class="bg-dark text-light">
         <div class="container">
             <div class="row">
@@ -133,6 +155,8 @@
             </div>
         </div>
     </footer>
+
+
     <script src="Main.js"></script>
 </body>
 
