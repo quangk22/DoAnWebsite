@@ -1,34 +1,36 @@
-const buyNowButtons = document.querySelectorAll('.buy-now');
 
-buyNowButtons.forEach(function(button) {
-  button.addEventListener('click', function(event) {
-    event.preventDefault(); // Ngăn chặn hành vi mặc định của thẻ <a>
-    
-    const id = button.getAttribute('data-id');
-    const name = button.getAttribute('data-name');
-    const price = parseFloat(button.getAttribute('data-price'));
+document.addEventListener("DOMContentLoaded", function () {
+ var productItems = document.querySelectorAll(".card");
+ var btnLoadMore = document.querySelector(".btn-load-more");
 
-    // Thực hiện hành động khi người dùng nhấp vào "Mua ngay"
-    addToCart(id, name, price);
-  });
+ var itemsToShow = 6; // Số lượng sản phẩm muốn hiển thị mỗi lần nhấp vào nút "Xem thêm sản phẩm"
+ var visibleItems = 0; // Số lượng sản phẩm đã hiển thị
+
+ // Ẩn tất cả sản phẩm
+ for (var i = 0; i < productItems.length; i++) {
+     productItems[i].style.display = "none";
+ }
+
+ // Hiển thị số lượng sản phẩm ban đầu
+ for (var i = 0; i < itemsToShow; i++) {
+     if (productItems[i]) {
+         productItems[i].style.display = "block";
+         visibleItems++;
+     }
+ }
+
+ // Xử lý sự kiện nhấp vào nút "Xem thêm sản phẩm"
+ btnLoadMore.addEventListener("click", function () {
+     var hiddenItems = document.querySelectorAll(".card:not([style*='display: block'])");
+     var itemsToDisplay = Math.min(hiddenItems.length, itemsToShow);
+
+     for (var i = 0; i < itemsToDisplay; i++) {
+         hiddenItems[i].style.display = "block";
+         visibleItems++;
+     }
+
+     if (visibleItems >= hiddenItems.length) {
+         btnLoadMore.style.display = "none";
+     }
+ });
 });
-
-function addToCart(id, name, price) {
-  // Thêm mã xử lý để chuyển thông tin sản phẩm qua trang giỏ hàng ở đây
-  // Bạn có thể sử dụng localStorage hoặc gửi dữ liệu đến máy chủ
-
-  // Ví dụ:
-  const cartItem = {
-    id: id,
-    name: name,
-    price: price
-  };
-
-  // Lưu trữ thông tin sản phẩm vào localStorage
-  let cart = localStorage.getItem('cart');
-  cart = cart ? JSON.parse(cart) : []; // Chuyển đổi từ chuỗi JSON thành mảng JavaScript
-
-  cart.push(cartItem);
-
-  localStorage.setItem('cart', JSON.stringify(cart)); // Chuyển đổi mảng JavaScript thành chuỗi JSON và lưu vào localStorage
-}
