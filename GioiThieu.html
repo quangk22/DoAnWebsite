@@ -30,7 +30,7 @@
             </a>
             <ul class="main-menu">
                 <li> <a href="Home.html">Trang chủ</a> </li>
-                <li><a href="">Sản phẩm</a>
+                <li><a href="SPTrungNguyen.html">Sản phẩm</a>
                     <ul class="sub-menu">
                         <li><a href="SPTrungNguyen.html">Coffee trung nguyên</a></li>
                         <li><a href="SpDaLat.html">Đà lạt coffee</a></li>
@@ -40,7 +40,7 @@
                 </li>
                 <li><a href="GioiThieu.html">Giới thiệu</a> </li>
                 <li><a href="LienHe.html">Liên hệ</a> </li>
-                <li><a href=""><i class="fa-sharp fa-solid fa-cart-shopping"></i></a></li>
+                <li id="cart-icon"><i class="fa-sharp fa-solid fa-cart-shopping" style="color: white;" ></i></li>
             </ul>
         </nav>
 
@@ -76,7 +76,29 @@
         </div>
     </div>
 
-
+    <div class="cart-1">
+        <h2 class="cart-title ">Thông tin nhận hàng</h2>
+        <div class="group">
+            <input type="text" name="contact[name]" class="form-control" placeholder="Tên người nhân"
+                aria-describedby="basic-addon1" style="width: 300px;">
+            <input type="text" name="contact[email]" class="form-control" placeholder="Địa chỉ nhận"
+                aria-describedby="basic-addon1" style="width: 300px;">
+            <input type="text" name="contact[phone]" class="form-control" placeholder="Số điện thoại"
+                aria-describedby="basic-addon1" style="width: 300px;">
+        </div>  
+        <h2 class="cart-title thong-tin">Giỏ Hàng</h2>
+        <div class="cart-content">
+            <!-- Nội dung giỏ hàng -->
+        </div>
+        
+        <div class="total">
+            <div class="total-title">Giá</div>
+            <div class="total-price">$0</div>
+        </div>
+       
+        <button type="button" class="btn-buy">Mua Ngay</button>
+        <i class='bx bx-x' id="close-cart"></i>
+    </div>
    <!-- Footer -->
    <footer class="bg-dark text-light">
     <div class="container">
@@ -111,6 +133,7 @@
         </div>
     </div>
 </footer>
+<script src="Main.js"></script>
 </body>
 
 </html>

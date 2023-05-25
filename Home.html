@@ -41,7 +41,7 @@
                 </li>
                 <li><a href="GioiThieu.html">Giới thiệu</a> </li>
                 <li><a href="LienHe.html">Liên hệ</a> </li>
-                <li><a href="GioHang.htm"><i class="fa-sharp fa-solid fa-cart-shopping"></i></a></li>
+                <li id="cart-icon"><i class="fa-sharp fa-solid fa-cart-shopping" style="color: white;"></i></li>
             </ul>
         </nav>
 
@@ -64,7 +64,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Cà phê hòa tan cao cấp Exxlusive Decaf lọ 100g</h5>
                     <p class="card-text">122.000đ</p>
-                    <a href="#" class="btn btn-primary">Mua ngay</a>
+                    <button class="btn btn-primary add-cart">Thêm vào giỏ hàng</button>
                 </div>
             </div>
             <!-- end -->
@@ -75,7 +75,7 @@
                         Cà phê hòa tan Davidoff lọ 100g
                     </h5>
                     <p class="card-text">135.000đ</p>
-                    <a href="#" class="btn btn-primary">Mua ngay</a>
+                    <button class="btn btn-primary add-cart">Thêm vào giỏ hàng</button>
                 </div>
             </div>
             <!-- end -->
@@ -88,7 +88,7 @@
                     <p class="card-text">
                         200.000đ
                     </p>
-                    <a href="#" class="btn btn-primary">Mua ngay</a>
+                    <button class="btn btn-primary add-cart">Thêm vào giỏ hàng</button>
                 </div>
             </div>
             <!-- end -->
@@ -101,7 +101,7 @@
                     <p class="card-text">
                         250.000đ
                         .</p>
-                    <a href="#" class="btn btn-primary">Mua ngay</a>
+                    <button class="btn btn-primary add-cart">Thêm vào giỏ hàng</button>
                 </div>
             </div>
             <!-- end -->
@@ -110,7 +110,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Cà phê Passiona G7 Trung Nguyên hộp 224g</h5>
                     <p class="card-text">45.000đ.</p>
-                    <a href="#" class="btn btn-primary">Mua ngay</a>
+                    <button class="btn btn-primary add-cart">Thêm vào giỏ hàng</button>
                 </div>
             </div>
             <!-- end -->
@@ -119,7 +119,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Cà phê rang xay Sành Điệu Highlands Coffee gói 200g</h5>
                     <p class="card-text">254.000đ</p>
-                    <a href="#" class="btn btn-primary">Mua ngay</a>
+                    <button class="btn btn-primary add-cart">Thêm vào giỏ hàng</button>
                 </div>
             </div>
             <!-- end -->
@@ -128,7 +128,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Cà phê rang xay Thuần Việt gói 250g</h5>
                     <p class="card-text">250.000đ</p>
-                    <a href="#" class="btn btn-primary">Thêm vào giỏ hàng</a>
+                    <button class="btn btn-primary add-cart">Thêm vào giỏ hàng</button>
                 </div>
             </div>
             <!-- end -->
@@ -137,7 +137,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Cà phê sữa đá Highlands Coffee lon 235ml</h5>
                     <p class="card-text">10.000đ</p>
-                    <a href="#" class="btn btn-primary">Thêm vào giỏ hàng</a>
+                    <button class="btn btn-primary add-cart">Thêm vào giỏ hàng</button>
                 </div>
             </div>
             <!-- end -->
@@ -155,7 +155,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Cà phê hòa tan cao cấp Exxlusive Decaf lọ 100g</h5>
                         <p class="card-text">122.000đ</p>
-                        <a href="#" class="btn btn-primary">Mua ngay</a>
+                        <button class="btn btn-primary add-cart">Thêm vào giỏ hàng</button>
                     </div>
                 </div>
                 <!-- end -->
@@ -166,7 +166,7 @@
                             Cà phê hòa tan Davidoff lọ 100g
                         </h5>
                         <p class="card-text">135.000đ</p>
-                        <a href="#" class="btn btn-primary">Mua ngay</a>
+                        <button class="btn btn-primary add-cart">Thêm vào giỏ hàng</button>
                     </div>
                 </div>
                 <!-- end -->
@@ -179,7 +179,7 @@
                         <p class="card-text">
                             200.000đ
                         </p>
-                        <a href="#" class="btn btn-primary">Mua ngay</a>
+                        <button class="btn btn-primary add-cart">Thêm vào giỏ hàng</button>
                     </div>
                 </div>
                 <!-- end -->
@@ -192,7 +192,7 @@
                         <p class="card-text">
                             250.000đ
                             .</p>
-                        <a href="#" class="btn btn-primary">Mua ngay</a>
+                        <button class="btn btn-primary add-cart">Thêm vào giỏ hàng</button>
                     </div>
                 </div>
                 <!-- end -->
@@ -201,6 +201,29 @@
             <!-- card-list -->
         </div>
         <!-- group-list-->
+    </div>
+    <div class="cart-1">
+        <h2 class="cart-title ">Thông tin nhận hàng</h2>
+        <div class="group">
+            <input type="text" name="contact[name]" class="form-control" placeholder="Tên người nhân"
+                aria-describedby="basic-addon1" style="width: 300px;">
+            <input type="text" name="contact[email]" class="form-control" placeholder="Địa chỉ nhận"
+                aria-describedby="basic-addon1" style="width: 300px;">
+            <input type="text" name="contact[phone]" class="form-control" placeholder="Số điện thoại"
+                aria-describedby="basic-addon1" style="width: 300px;">
+        </div>
+        <h2 class="cart-title thong-tin">Giỏ Hàng</h2>
+        <div class="cart-content">
+            <!-- Nội dung giỏ hàng -->
+        </div>
+
+        <div class="total">
+            <div class="total-title">Giá</div>
+            <div class="total-price">$0</div>
+        </div>
+
+        <button type="button" class="btn-buy">Mua Ngay</button>
+        <i class='bx bx-x' id="close-cart"></i>
     </div>
     <footer class="bg-dark text-light">
         <div class="container">
@@ -235,33 +258,157 @@
             </div>
         </div>
     </footer>
+    <script>
+        $(document).ready(function () {
+            // Initialize variables
+            var currentIndex = 0,
+                sliderImages = $('.slider-image'),
+                sliderImagesCount = sliderImages.length;
 
-        <script>
-            $(document).ready(function () {
-                // Initialize variables
-                var currentIndex = 0,
-                    sliderImages = $('.slider-image'),
-                    sliderImagesCount = sliderImages.length;
+            // Set the first image as active
+            sliderImages.eq(currentIndex).addClass('active');
 
-                // Set the first image as active
-                sliderImages.eq(currentIndex).addClass('active');
-
-                // Define function to move to next slide
-                function nextSlide() {
-                    currentIndex++;
-                    if (currentIndex >= sliderImagesCount) {
-                        currentIndex = 0;
-                    }
-                    sliderImages.eq(currentIndex).addClass('active').siblings().removeClass('active');
-                    sliderImages.eq(currentIndex).css('left', '100%').animate({ 'left': '0' });
-                    sliderImages.eq((currentIndex + sliderImagesCount - 1) % sliderImagesCount).animate({ 'left': '-100%' });
+            // Define function to move to next slide
+            function nextSlide() {
+                currentIndex++;
+                if (currentIndex >= sliderImagesCount) {
+                    currentIndex = 0;
                 }
+                sliderImages.eq(currentIndex).addClass('active').siblings().removeClass('active');
+                sliderImages.eq(currentIndex).css('left', '100%').animate({ 'left': '0' });
+                sliderImages.eq((currentIndex + sliderImagesCount - 1) % sliderImagesCount).animate({ 'left': '-100%' });
+            }
 
-                // Set up interval to move to next slide every 4 seconds
-                setInterval(nextSlide, 4000);
+            // Set up interval to move to next slide every 4 seconds
+            setInterval(nextSlide, 4000);
+        });
+        // Để js giỏ hàng ở dưới đây
+        let cartIcon = document.querySelector("#cart-icon");
+        let cart = document.querySelector(".cart-1");
+        let closeCart = document.querySelector("#close-cart");
+
+
+        // Thay đổi tên class từ "add-cart" thành "buy-now"
+        var buyNowButtons = document.getElementsByClassName("buy-now");
+
+        // Lặp qua từng nút "Mua ngay"
+        for (var i = 0; i < buyNowButtons.length; i++) {
+            var button = buyNowButtons[i];
+            // Gán sự kiện click cho mỗi nút
+            button.addEventListener("click", addToCart);
+        }
+
+
+        cartIcon.onclick = () => {
+            cart.classList.toggle("active");
+        };
+
+        closeCart.onclick = () => {
+            cart.classList.remove("active");
+        };
+        if (document.readyState == "loading") {
+            document.addEventListener('DOMContentLoaded', ready);
+        } else {
+            ready();
+        }
+
+        function ready() {
+            var addCart = document.getElementsByClassName("add-cart");
+            for (var i = 0; i < addCart.length; i++) {
+                var button = addCart[i];
+                button.addEventListener("click", addCartClicked);
+            }
+
+            document
+                .getElementsByClassName("btn-buy")[0]
+                .addEventListener("click", buyButtonClicked);
+        }
+
+        function buyButtonClicked() {
+            alert('Đơn hàng của bạn đã được đặt');
+            var cartContent = document.getElementsByClassName("cart-content")[0];
+            while (cartContent.hasChildNodes()) {
+                cartContent.removeChild(cartContent.firstChild);
+            }
+            updatetotal();
+        }
+
+        function addCartClicked(event) {
+            var button = event.target;
+            var shopProduct = button.closest(".card");
+            var title = shopProduct.getElementsByClassName("card-title")[0].innerText;
+            var price = shopProduct.getElementsByClassName("card-text")[0].innerText;
+            var productImg = shopProduct.getElementsByClassName("card-img-top")[0].src;
+            addProductToCart(title, price, productImg);
+            updatetotal();
+        }
+
+        function addProductToCart(title, price, productImg) {
+            var cartShopBox = document.createElement("div");
+            cartShopBox.classList.add("cart-box");
+
+            var cartBoxContent = `
+        <img src="${productImg}" alt="" class="cart-img">
+        <div class="detail-box">
+            <div class="cart-product-title">${title}</div>
+            <div class="cart-price">${price}</div>
+            <input type="number" value="1" class="cart-quantity">
+        </div>
+        <i class='bx bxs-trash-alt cart-remove'></i>`;
+
+            cartShopBox.innerHTML = cartBoxContent;
+            var cartItems = document.getElementsByClassName("cart-content")[0];
+            cartItems.appendChild(cartShopBox);
+
+            cartShopBox
+                .getElementsByClassName("cart-remove")[0]
+                .addEventListener("click", removeCartItem);
+
+            cartShopBox
+                .getElementsByClassName("cart-quantity")[0]
+                .addEventListener("change", quantityChanged);
+        }
+
+        function removeCartItem(event) {
+            var buttonClicked = event.target;
+            buttonClicked.parentElement.remove();
+            updatetotal();
+        }
+
+        function quantityChanged(event) {
+            var input = event.target;
+            if (isNaN(input.value) || input.value <= 0) {
+                input.value = 1;
+            }
+            updatetotal();
+        }
+
+        function updatetotal() {
+            var cartContent = document.getElementsByClassName("cart-content")[0];
+            var cartBoxes = cartContent.getElementsByClassName("cart-box");
+            var total = 0;
+            for (var i = 0; i < cartBoxes.length; i++) {
+                var cartBox = cartBoxes[i];
+                var priceElement = cartBox.getElementsByClassName("cart-price")[0];
+                var quantityElement = cartBox.getElementsByClassName("cart-quantity")[0];
+                var price = parseFloat(priceElement.innerText.replace(".", "").replace("đ", "")); // Lấy giá trị số từ chuỗi giá tiền
+                var quantity = parseInt(quantityElement.value);
+
+                total += price * quantity;
+            }
+            total = Math.round(total * 100) / 100;
+
+            // Định dạng số thành giá tiền Việt Nam đồng
+            var formatter = new Intl.NumberFormat("vi-VN", {
+                style: "currency",
+                currency: "VND"
             });
-        </script>
-         
+            var formattedTotal = formatter.format(total);
+
+            document.getElementsByClassName("total-price")[0].innerText = formattedTotal;
+        }
+    </script>
+
 </body>
 
 </html>

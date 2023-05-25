@@ -41,7 +41,7 @@
                 </li>
                 <li><a href="GioiThieu.html">Giới thiệu</a> </li>
                 <li><a href="LienHe.html">Liên hệ</a> </li>
-                <li><a href="GioHang.htm"><i class="fa-sharp fa-solid fa-cart-shopping"></i></a></li>
+                <li id="cart-icon"><i class="fa-sharp fa-solid fa-cart-shopping" style="color: white;" ></i></li>
             </ul>
         </nav>
 
@@ -141,7 +141,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Cà phê đen rang xáy Phin Giấy</h5>
                             <p class="card-text">110.000đ</p>
-                            <a href="#" class="btn btn-primary">Thêm vào giỏ hàng</a>
+                            <button class="btn btn-primary add-cart">Thêm vào giỏ hàng</button>
                         </div>
                     </div>
                     <!-- end -->
@@ -153,7 +153,7 @@
                                 Cà phê hòa tan ROBUSTA gói 100g
                             </h5>
                             <p class="card-text">135.000đ</p>
-                            <a href="#" class="btn btn-primary">Mua ngay</a>
+                            <button class="btn btn-primary add-cart">Thêm vào giỏ hàng</button>
                         </div>
                     </div>
                     <!-- end -->
@@ -162,7 +162,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Cà phê rang xay Sành Điệu Highlands Coffee gói 200g</h5>
                             <p class="card-text">254.000đ</p>
-                            <a href="#" class="btn btn-primary">Mua ngay</a>
+                            <button class="btn btn-primary add-cart">Thêm vào giỏ hàng</button>
                         </div>
                     </div>
                     <!-- end -->
@@ -173,7 +173,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Cà phê Drip - Culi Robusta hạt số 1 - 250gr</h5>
                             <p class="card-text">39.000đ</p>
-                            <a href="#" class="btn btn-primary">Mua ngay</a>
+                            <button class="btn btn-primary add-cart">Thêm vào giỏ hàng</button>
                         </div>
                     </div>
                     <!-- end -->
@@ -187,7 +187,7 @@
                             <p class="card-text">
                                 250.000đ
                                 .</p>
-                            <a href="#" class="btn btn-primary">Mua ngay</a>
+                                <button class="btn btn-primary add-cart">Thêm vào giỏ hàng</button>
                         </div>
 
                     </div>
@@ -201,7 +201,7 @@
                             <p class="card-text">
                                 47.000đ
                             </p>
-                            <a href="#" class="btn btn-primary">Mua ngay</a>
+                            <button class="btn btn-primary add-cart">Thêm vào giỏ hàng</button>
                         </div>
                     </div>
                     <!-- end -->
@@ -212,7 +212,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Cà phê phin giấy Trung Nguyên Legend Americano</h5>
                             <p class="card-text">530.000đ</p>
-                            <a href="#" class="btn btn-primary">Mua ngay</a>
+                            <button class="btn btn-primary add-cart">Thêm vào giỏ hàng</button>
                         </div>
                     </div>
                     <!-- end -->
@@ -223,7 +223,7 @@
                                 Cà phê House Blend - 500gr
                             </h5>
                             <p class="card-text">164.000đ</p>
-                            <a href="#" class="btn btn-primary">Mua ngay</a>
+                            <button class="btn btn-primary add-cart">Thêm vào giỏ hàng</button>
                         </div>
                     </div>
                     <!-- end -->
@@ -237,7 +237,7 @@
                                 <p class="card-text">
                                     200.000đ
                                 </p>
-                                <a href="#" class="btn btn-primary">Mua ngay</a>
+                                <button class="btn btn-primary add-cart">Thêm vào giỏ hàng</button>
                             </div>
                         </div>
                     </div>
@@ -249,6 +249,29 @@
 
             </div>
         </div>
+    </div>
+    <div class="cart-1">
+        <h2 class="cart-title ">Thông tin nhận hàng</h2>
+        <div class="group">
+            <input type="text" name="contact[name]" class="form-control" placeholder="Tên người nhân"
+                aria-describedby="basic-addon1" style="width: 300px;">
+            <input type="text" name="contact[email]" class="form-control" placeholder="Địa chỉ nhận"
+                aria-describedby="basic-addon1" style="width: 300px;">
+            <input type="text" name="contact[phone]" class="form-control" placeholder="Số điện thoại"
+                aria-describedby="basic-addon1" style="width: 300px;">
+        </div>  
+        <h2 class="cart-title thong-tin">Giỏ Hàng</h2>
+        <div class="cart-content">
+            <!-- Nội dung giỏ hàng -->
+        </div>
+        
+        <div class="total">
+            <div class="total-title">Giá</div>
+            <div class="total-price">$0</div>
+        </div>
+       
+        <button type="button" class="btn-buy">Mua Ngay</button>
+        <i class='bx bx-x' id="close-cart"></i>
     </div>
     <footer class="bg-dark text-light">
         <div class="container">
